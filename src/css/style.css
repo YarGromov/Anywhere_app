@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ramaraja";
+}
+body {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  margin: 10px auto;
+  width: 700px;
+  height: 520px;
+  background-color: #525461;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  width: 600px;
+  height: 420px;
+  background: url("/src/img/mount.jpg") center center/cover no-repeat;
+  border-radius: 15px;
+  box-shadow: 25px 24px 40px #1d2b38;
+}
+
+.navigation {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navigation a:hover {
+  color: #5b91e3;
+  opacity: 0.9;
+}
+
+.navigation .fsz {
+  font-size: 11px;
+  opacity: 0.3;
+}
+
+.anywhere::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: #5b91e3;
+  position: absolute;
+  border-radius: 100%;
+  left: 28px;
+  top: 32px;
+}
+
+.stripes {
+  position: absolute;
+  width: 55px;
+  height: 25px;
+  background: url("/src/img/ff.png") center center/cover no-repeat;
+  right: 30px;
+  bottom: 35px;
+}
+
+.info {
+  margin-left: 40px;
+  color: white;
+  line-height: 30px;
+}
+
+.start {
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.create {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.create::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #5b91e3;
+  position: absolute;
+  border-radius: 100%;
+  left: 276px;
+  top: 128px;
+}
+
+.logIn {
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.blue {
+  color: #616fed;
+  font-size: 13px;
+  text-decoration: none;
+}
+.blue:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+form {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+input {
+  border-radius: 7px;
+  border: none;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #4b4d5e;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+.name {
+  width: 100px;
+}
+
+.lastName {
+  margin-left: 10px;
+}
+
+.long {
+  width: 213px;
+}
+
+.buttons {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+button {
+  border-radius: 30px;
+  width: 100px;
+  height: 27px;
+  font-size: 4px;
+}
+
+.but1 {
+  font-size: 11px;
+  background-color: #4b4d5e;
+  color: white;
+  border: none;
+}
+
+.but2 {
+  margin-left: 5px;
+  font-size: 11px;
+  background-color: #4b4d5e;
+  color: white;
+  border: none;
+}
+
+.fa-solid fa-thumbs-up fa-5x {
+  width: 7px;
+}
+
+.but1:hover {
+  background-color: #5b91e3;
+}
+
+.but2:hover {
+  background-color: #5b91e3;
+}
+
+.iconLock {
+  position: absolute;
+  left: 185px;
+  top: 86px;
+  width: 20px;
+  height: 20px;
+  background-color: #525461;
+}
+.iconMail {
+  position: absolute;
+  left: 187px;
+  top: 46px;
+}
+
+.iconName {
+  position: absolute;
+  width: 18px;
+  left: 186px;
+  top: 6px;
+}
+
+.iconName2 {
+  position: absolute;
+  width: 18px;
+  left: 75px;
+  top: 6px;
+}
+
+.line {
+  position: absolute;
+  height: 438px;
+  left: 80px;
+  bottom: 0.1px;
+  opacity: 0.2;
+}
