@@ -63,8 +63,8 @@ body {
 .anywhere::before {
   content: "";
   display: block;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   background-color: #5b91e3;
   position: absolute;
   border-radius: 100%;
@@ -135,13 +135,19 @@ input {
   margin-bottom: 10px;
   background-color: #4b4d5e;
   color: white;
-  font-size: 7px;
+  font-size: 11px;
   padding: 10px;
 }
 
 input::-webkit-input-placeholder {
   color: white;
   font-size: 10px;
+}
+
+input:focus {
+  border-color: red;
+  font-size: 13px;
+  background-color: #7b7c8a;
 }
 
 .name {
@@ -154,16 +160,6 @@ input::-webkit-input-placeholder {
 
 .long {
   width: 313px;
-}
-
-input {
-  border: none;
-  font-size: 11px;
-}
-
-input:focus {
-  border: 1px solid red;
-  font-size: 13px;
 }
 
 .buttons {
@@ -245,11 +241,10 @@ button {
   opacity: 0.2;
 }
 
-.sample a{
+.sample a {
   position: relative;
   bottom: 250px;
   left: 1050px;
   color: #f07373;
   text-decoration: none;
-
 }
