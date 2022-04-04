@@ -244,3 +244,12 @@ button {
   bottom: 0.1px;
   opacity: 0.2;
 }
+
+.sample a{
+  position: relative;
+  bottom: 250px;
+  left: 1050px;
+  color: #f07373;
+  text-decoration: none;
+
+}
