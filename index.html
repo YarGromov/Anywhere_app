@@ -20,32 +20,34 @@
       <img src="/src/img/line.png" class="line" alt="line">
       <nav class="navigation">
         <ul>
-          <li><a class="anywhere" href="#">Anywhere app.</a></li>
-          <li><a class="fsz" href="#">Home</a></li>
-          <li><a class="fsz" href="#">Join</a></li>
+          <li><a class="anywhere" href="#">Anywhere app</a></li>
+          <li><a class="nav_link" href="#">Home</a></li>
+          <li><a class="nav_link" href="#">Join</a></li>
         </ul>
       </nav>
 
       <div class="stripes"></div>
 
       <div class="info">
-        <span class="start"> Start for free </span> <br />
-        <span class="create"> Create new account </span> <br />
-        <span class="logIn">
+        <div class="start"> Start for free </div>
+        <div class="create">
+          <h1> Create new account <span class="dot">.</span></h1>
+        </div>
+        <div class="logIn">
           Already A Member? <span><a class="blue" href="#">Log in</a></span>
-        </span>
+        </div>
       </div>
 
       <form action="#" method="POST">
         <img src="/src/img/iconsLock1.png" alt="icons" class="iconLock" />
         <img src="/src/img/iconsMail.png" alt="mail" class="iconMail" />
         <img src="/src/img/iconName.png" alt="iconName" class="iconName" />
-        <img src="/src/img/iconName.png" alt="iconName" class="iconName2" />
+        <img src="/src/img/iconName.png" alt="iconName2" class="iconName2" />
         <input class="name" type="text" placeholder="First name" name="First name" />
         <input class="name lastName" type="text" placeholder="Last name" name="Last name" />
-        <br />
-        <input class="long" type="email" name="email" placeholder="Email" />
-        <br />
+
+        <div><input class="long" type="email" name="email" placeholder="Email" /></div>
+
         <input class="long" type="password" name="password" placeholder="Password" />
       </form>
 
