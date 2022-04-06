@@ -8,6 +8,12 @@ body {
   position: relative;
   background: url("/src/img/mount.jpg") center center/cover no-repeat;
 }
+.container img {
+  position: absolute;
+  height: 100%;
+  left: 400px;
+  width: 550px;
+}
 
 .content {
   position: relative;
