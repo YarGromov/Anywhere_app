@@ -6,30 +6,18 @@
 }
 body {
   position: relative;
-}
-
-.container {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-  min-height: 550px;
-  background-color: #525461;
-  border-radius: 7px;
-  justify-content: center;
-  align-items: center;
+  background: url("/src/img/mount.jpg") center center/cover no-repeat;
 }
 
 .content {
   position: relative;
-  width: 90%;
-  height: 420px;
-  background: url("/src/img/mount.jpg") center center/cover no-repeat;
   border-radius: 15px;
-  box-shadow: 25px 24px 40px #1d2b38;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .navigation {
+  padding-top: 40px;
+  padding-left: 20px;
   position: relative;
   width: 100%;
   height: 20%;
@@ -55,30 +43,34 @@ body {
 }
 
 .navigation .nav_link {
-  font-size: 15px;
+  font-size: 17px;
   opacity: 0.3;
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+a span {
+  font-size: 30px;
 }
 
 .anywhere::before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: #5b91e3;
   position: absolute;
   border-radius: 100%;
   left: 28px;
-  top: 32px;
+  top: 43px;
 }
 
 .stripes {
-  position: absolute;
-  width: 80px;
-  height: 60px;
+  position: relative;
+  width: 90px;
+  height: 70px;
   background: url("/src/img/ff.png") center center/cover no-repeat;
-  right: 50px;
-  bottom: 25px;
+  left: 950px;
+  top: 380px;
 }
 
 .info {
@@ -91,13 +83,13 @@ body {
   display: inline-block;
   opacity: 0.6;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 17px;
   margin-top: 10px;
 }
 
 .create h1 {
-  font-size: 37px;
-  letter-spacing: 2px;
+  font-size: 40px;
+  letter-spacing: 4px;
   padding-top: 15px;
 }
 
@@ -108,14 +100,14 @@ body {
 }
 
 .logIn {
-  margin: 10px 5px;
+  margin: 20px 5px;
   opacity: 0.6;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .login_blue {
   color: #4281ff;
-  font-size: 13px;
+  font-size: 16px;
   text-decoration: none;
 }
 .login_blue:hover {
@@ -127,6 +119,7 @@ form {
   position: relative;
   margin-left: 40px;
   padding-top: 10px;
+  min-height: 180px;
 }
 
 /* input {
@@ -180,29 +173,25 @@ button {
 }
 
 .but1 {
-  font-size: 12px;
+  font-size: 15px;
   background-color: #4b4d5e;
   color: white;
   border: none;
-  min-width: 140px;
+  min-width: 160px;
   margin-left: 10px;
-  min-height: 30px;
+  min-height: 40px;
 }
 
 .but2 {
   position: relative;
   margin-left: 5px;
-  font-size: 12px;
+  font-size: 15px;
   background-color: #4b4d5e;
   color: white;
   border: none;
-  min-width: 140px;
-  min-height: 30px;
+  min-width: 160px;
+  min-height: 40px;
   z-index: 2;
-}
-
-.fa-solid fa-thumbs-up fa-5x {
-  width: 7px;
 }
 
 .but1:hover {
@@ -243,7 +232,7 @@ button {
 
 .line {
   position: absolute;
-  height: 438px;
+  height: 100%;
   left: 250px;
   bottom: 0.1px;
   opacity: 0.2;
@@ -259,7 +248,7 @@ button {
 
 .input_first_name,
 .input_second_name {
-  max-width: 170px;
+  max-width: 180px;
 }
 
 .div_first_name,
@@ -303,27 +292,27 @@ button {
 .input_email,
 .input_password {
   position: relative;
-  border-radius: 7px;
+  border-radius: 10px;
   border: none;
-  height: 35px;
-  margin-bottom: 10px;
+  min-height: 35px;
+  height: 45px;
   background-color: rgb(61, 64, 78);
   color: white;
   font-size: 18px;
-  padding: 10px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 13px;
 }
 
 .inputs_name {
   display: flex;
-  max-width: 350px;
+  max-width: 370px;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .input_password,
 .input_email {
-  min-width: 350px;
+  min-width: 370px;
 }
 
 .inputs_log {
@@ -333,9 +322,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 310px;
+  max-width: 330px;
   left: 2px;
-  margin-bottom: 30px;
 }
 
 input:focus {
@@ -371,6 +359,9 @@ input:focus {
   bottom: -5px;
 }
 
+.div_email {
+  margin-bottom: 40px;
+}
 .div_email:after {
   content: "";
   background-image: url("/src/img/iconsMail.png");
