@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Ramaraja"; */
 }
 body {
   position: relative;
@@ -22,8 +21,7 @@ body {
 }
 
 .navigation {
-  padding-top: 40px;
-  padding-left: 20px;
+  padding: 40px 0 0 20px;
   position: relative;
   width: 100%;
   height: 20%;
@@ -93,7 +91,7 @@ a span {
   margin-top: 10px;
 }
 
-.create h1 {
+h1 {
   font-size: 40px;
   letter-spacing: 4px;
   padding-top: 15px;
@@ -118,7 +116,6 @@ a span {
 }
 .login_blue:hover {
   color: #fff;
-  opacity: 1;
 }
 
 form {
@@ -171,70 +168,21 @@ input:focus {
   margin-left: 40px;
   margin-top: 10px;
 }
-button {
-  border-radius: 30px;
-  width: 100px;
-  height: 27px;
-  font-size: 4px;
-}
 
-.but1 {
+.button {
   font-size: 15px;
   background-color: #4b4d5e;
   color: white;
   border: none;
   min-width: 160px;
+  min-height: 40px;
   margin-left: 10px;
-  min-height: 40px;
+  border-radius: 30px;
 }
 
-.but2 {
-  position: relative;
-  margin-left: 5px;
-  font-size: 15px;
-  background-color: #4b4d5e;
-  color: white;
-  border: none;
-  min-width: 160px;
-  min-height: 40px;
-  z-index: 2;
-}
-
-.but1:hover {
+.button:hover {
   background-color: #5b91e3;
 }
-
-.but2:hover {
-  background-color: #5b91e3;
-}
-
-/* .iconLock {
-  position: absolute;
-  left: 285px;
-  top: 85px;
-  width: 20px;
-  height: 20px;
-  background-color: #525461;
-}
-.iconMail {
-  position: absolute;
-  left: 287px;
-  top: 46px;
-}
-
-.iconName {
-  position: absolute;
-  width: 18px;
-  left: 126px;
-  top: 6px;
-}
-
-.iconName2 {
-  position: absolute;
-  width: 18px;
-  left: 285px;
-  top: 6px;
-} */
 
 .line {
   position: absolute;
@@ -252,38 +200,28 @@ button {
   text-decoration: none;
 }
 
-.input_first_name,
-.input_second_name {
+.entry_field_first_name,
+.entry_field_second_name {
   max-width: 180px;
 }
 
-.div_first_name,
-.div_second_name,
-.div_email,
-.div_password {
+.entry_field_first_name:focus,
+.entry_field_second_name:focus {
+  max-width: 170px;
+}
+
+.height_18 {
   position: relative;
   height: 18px;
 }
 
-.input_first_name,
-.input_second_name,
-.span_first_name,
-.span_second_name,
-.span_email,
-.span_password,
-.input_email,
-.input_password {
+.position {
   position: absolute;
   top: 50%;
-  font-size: 16px;
-  background-color: transparent;
   transform: translateY(-50%);
 }
 
-.span_first_name,
-.span_second_name,
-.span_email,
-.span_password {
+.hint {
   color: #ccc;
   padding-left: 4px;
   z-index: 2;
@@ -293,10 +231,7 @@ button {
   opacity: 0.5;
 }
 
-.input_first_name,
-.input_second_name,
-.input_email,
-.input_password {
+.entry_field {
   position: relative;
   border-radius: 10px;
   border: none;
@@ -305,8 +240,6 @@ button {
   background-color: rgb(61, 64, 78);
   color: white;
   font-size: 18px;
-  padding-left: 20px;
-  padding-top: 13px;
 }
 
 .inputs_name {
@@ -316,12 +249,12 @@ button {
   margin-bottom: 40px;
 }
 
-.input_password,
-.input_email {
+.entry_field_password,
+.entry_field_email {
   min-width: 370px;
 }
 
-.inputs_log {
+.inputs_email_password {
   position: relative;
   margin-top: 30px;
   min-height: 65px;
@@ -338,12 +271,7 @@ input:focus {
   outline: 2px solid #4a7ce0;
 }
 
-.input_first_name:focus,
-.input_second_name:focus {
-  max-width: 170px;
-}
-
-.div_first_name:after {
+.first_name:after {
   content: "";
   background-image: url("/src/img/iconName.png");
   background-repeat: no-repeat;
@@ -354,7 +282,7 @@ input:focus {
   bottom: -5px;
 }
 
-.div_second_name:after {
+.second_name:after {
   content: "";
   background-image: url("/src/img/iconName.png");
   background-repeat: no-repeat;
@@ -365,10 +293,10 @@ input:focus {
   bottom: -5px;
 }
 
-.div_email {
+.email {
   margin-bottom: 40px;
 }
-.div_email:after {
+.email:after {
   content: "";
   background-image: url("/src/img/iconsMail.png");
   background-repeat: no-repeat;
@@ -380,7 +308,7 @@ input:focus {
   bottom: -5px;
 }
 
-.div_password:after {
+.password:after {
   content: "";
   background-image: url("/src/img/iconsLock1.png");
   background-repeat: no-repeat;
