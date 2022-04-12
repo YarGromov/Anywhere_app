@@ -2,33 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ramaraja";
 }
 body {
   position: relative;
+  background: url("/src/img/mount.jpg") center center/cover no-repeat;
 }
-
-.container {
-  display: flex;
-  margin: 10px auto;
-  width: 700px;
-  height: 520px;
-  background-color: #525461;
-  border-radius: 7px;
-  justify-content: center;
-  align-items: center;
+.container img {
+  position: absolute;
+  height: 100%;
+  left: 400px;
+  width: 550px;
 }
 
 .content {
   position: relative;
-  width: 600px;
-  height: 420px;
-  background: url("/src/img/mount.jpg") center center/cover no-repeat;
   border-radius: 15px;
-  box-shadow: 25px 24px 40px #1d2b38;
+  padding-left: 30px;
 }
 
 .navigation {
+  padding: 40px 0 0 20px;
   position: relative;
   width: 100%;
   height: 20%;
@@ -45,7 +38,7 @@ body {
 .navigation a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .navigation a:hover {
@@ -53,30 +46,35 @@ body {
   opacity: 0.9;
 }
 
-.navigation .fsz {
-  font-size: 11px;
+.navigation .nav_link {
+  font-size: 17px;
   opacity: 0.3;
+  margin-left: 30px;
+}
+
+a span {
+  font-size: 30px;
 }
 
 .anywhere::before {
   content: "";
   display: block;
-  width: 17px;
-  height: 17px;
+  width: 30px;
+  height: 30px;
   background-color: #5b91e3;
   position: absolute;
   border-radius: 100%;
   left: 28px;
-  top: 32px;
+  top: 43px;
 }
 
 .stripes {
-  position: absolute;
-  width: 55px;
-  height: 25px;
+  position: relative;
+  width: 90px;
+  height: 70px;
   background: url("/src/img/ff.png") center center/cover no-repeat;
-  right: 30px;
-  bottom: 35px;
+  left: 950px;
+  top: 380px;
 }
 
 .info {
@@ -86,145 +84,145 @@ body {
 }
 
 .start {
+  display: inline-block;
   opacity: 0.6;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 17px;
+  margin-top: 10px;
 }
 
-.create {
-  font-size: 30px;
-  letter-spacing: 1px;
+h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  padding-top: 15px;
 }
-.create::after {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: #5b91e3;
-  position: absolute;
-  border-radius: 100%;
-  left: 276px;
-  top: 128px;
+
+.create .dot {
+  position: relative;
+  color: #5b91e3;
+  right: 10px;
 }
 
 .logIn {
+  margin: 20px 5px 10px;
   opacity: 0.6;
-  font-size: 10px;
+  font-size: 16px;
 }
 
-.blue {
-  color: #616fed;
-  font-size: 13px;
+.logIn_link {
+  color: #4281ff;
+  font-size: 16px;
   text-decoration: none;
 }
-.blue:hover {
+.logIn_link:hover {
   color: #fff;
-  opacity: 1;
 }
 
 form {
   position: relative;
   margin-left: 40px;
-  margin-top: 15px;
-}
-
-input {
-  border-radius: 7px;
-  border: none;
-  height: 30px;
-  margin-bottom: 10px;
-  background-color: #4b4d5e;
-  color: white;
-  font-size: 10px;
-  padding: 10px;
-}
-
-input::-webkit-input-placeholder {
-  color: white;
-}
-
-.name {
-  width: 100px;
-}
-
-.lastName {
-  margin-left: 10px;
-}
-
-.long {
-  width: 213px;
+  padding-top: 10px;
+  min-height: 180px;
 }
 
 .buttons {
   margin-left: 40px;
   margin-top: 10px;
 }
-button {
+
+.button {
+  font-size: 15px;
+  background-color: #4b4d5e;
+  color: white;
+  border: none;
+  min-width: 160px;
+  min-height: 40px;
+  margin-left: 10px;
   border-radius: 30px;
-  width: 100px;
-  height: 27px;
-  font-size: 4px;
 }
 
-.but1 {
-  font-size: 11px;
-  background-color: #4b4d5e;
-  color: white;
-  border: none;
-}
-
-.but2 {
-  margin-left: 5px;
-  font-size: 11px;
-  background-color: #4b4d5e;
-  color: white;
-  border: none;
-}
-
-.fa-solid fa-thumbs-up fa-5x {
-  width: 7px;
-}
-
-.but1:hover {
+.button:hover {
   background-color: #5b91e3;
-}
-
-.but2:hover {
-  background-color: #5b91e3;
-}
-
-.iconLock {
-  position: absolute;
-  left: 185px;
-  top: 86px;
-  width: 20px;
-  height: 20px;
-  background-color: #525461;
-}
-.iconMail {
-  position: absolute;
-  left: 187px;
-  top: 46px;
-}
-
-.iconName {
-  position: absolute;
-  width: 18px;
-  left: 186px;
-  top: 6px;
-}
-
-.iconName2 {
-  position: absolute;
-  width: 18px;
-  left: 75px;
-  top: 6px;
 }
 
 .line {
   position: absolute;
-  height: 438px;
-  left: 80px;
+  height: 100%;
+  left: 250px;
   bottom: 0.1px;
   opacity: 0.2;
+}
+
+input:focus {
+  font-size: 18px;
+  background-color: #7b7c8a;
+  outline: 2px solid #4a7ce0;
+}
+
+.field {
+  max-width: 51%;
+}
+
+.grid {
+  display: flex;
+  max-width: 370px;
+  justify-content: space-between;
+}
+
+.field__input_first_name {
+  background-image: url("/src/img/iconName.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 97%;
+}
+
+.field__input_second_name {
+  background-image: url("/src/img/iconName.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 97%;
+}
+
+input[type="text"] {
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  min-height: 35px;
+  height: 45px;
+  max-width: 96%;
+  background-color: rgb(61, 64, 78);
+  color: white;
+  font-size: 18px;
+  padding-left: 22px;
+}
+
+input[type="password"] {
+  background-image: url("/src/img/iconsLock1.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 98%;
+  position: relative;
+}
+
+input[type="email"] {
+  background-image: url("/src/img/iconsMail.png");
+  background-repeat: no-repeat;
+  background-size: 27px;
+  background-position: 98%;
+  position: relative;
+}
+
+input[type="email"],
+input[type="password"] {
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  min-height: 35px;
+  height: 45px;
+  background-color: rgb(61, 64, 78);
+  color: white;
+  font-size: 18px;
+  min-width: 370px;
+  margin-top: 10px;
+  padding-left: 22px;
 }
