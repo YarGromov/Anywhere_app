@@ -6,11 +6,16 @@
 body {
   position: relative;
   background: url("/src/img/mount.jpg") center center/cover no-repeat;
-}
-.container img {
-  position: absolute;
   height: 100%;
-  left: 400px;
+}
+
+.container {
+}
+
+.line {
+  position: absolute;
+  min-height: 100%;
+  left: 40%;
   width: 550px;
 }
 
@@ -18,10 +23,11 @@ body {
   position: relative;
   border-radius: 15px;
   padding-left: 30px;
+  height: 100%;
 }
 
-.navigation {
-  padding: 40px 0 0 20px;
+.header {
+  padding: 50px 0 0 70px;
   position: relative;
   width: 100%;
   height: 20%;
@@ -29,52 +35,53 @@ body {
   align-items: center;
 }
 
-.navigation li {
+.header li {
   display: inline-block;
   list-style: none;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
-.navigation a {
+.header a {
   color: white;
   text-decoration: none;
-  font-size: 22px;
 }
 
-.navigation a:hover {
+.header a:hover {
   color: #5b91e3;
   opacity: 0.9;
 }
 
-.navigation .nav_link {
+.header .navigation__link {
   font-size: 17px;
   opacity: 0.3;
   margin-left: 30px;
 }
 
-a span {
+.header__logo {
+  text-decoration: none;
+  display: block;
   font-size: 30px;
 }
 
-.anywhere::before {
+.header__logo::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   background-color: #5b91e3;
   position: absolute;
   border-radius: 100%;
   left: 28px;
-  top: 43px;
+  top: 51px;
 }
 
-.stripes {
-  position: relative;
-  width: 90px;
-  height: 70px;
+.logotype {
+  position: absolute;
+  width: 110px;
+  height: 90px;
   background: url("/src/img/ff.png") center center/cover no-repeat;
-  left: 950px;
-  top: 380px;
+  left: 1250px;
+  top: 550px;
 }
 
 .info {
@@ -83,7 +90,7 @@ a span {
   line-height: 30px;
 }
 
-.start {
+.info__descripion {
   display: inline-block;
   opacity: 0.6;
   text-transform: uppercase;
@@ -97,24 +104,24 @@ h1 {
   padding-top: 15px;
 }
 
-.create .dot {
+.info__header-dot {
   position: relative;
   color: #5b91e3;
   right: 10px;
 }
 
-.logIn {
+.info__content {
   margin: 20px 5px 10px;
   opacity: 0.6;
   font-size: 16px;
 }
 
-.logIn_link {
+.info__link {
   color: #4281ff;
   font-size: 16px;
   text-decoration: none;
 }
-.logIn_link:hover {
+.info__link:hover {
   color: #fff;
 }
 
@@ -145,14 +152,6 @@ form {
   background-color: #5b91e3;
 }
 
-.line {
-  position: absolute;
-  height: 100%;
-  left: 250px;
-  bottom: 0.1px;
-  opacity: 0.2;
-}
-
 input:focus {
   font-size: 18px;
   background-color: #7b7c8a;
@@ -169,14 +168,7 @@ input:focus {
   justify-content: space-between;
 }
 
-.field__input_first_name {
-  background-image: url("/src/img/iconName.png");
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: 97%;
-}
-
-.field__input_second_name {
+.field__input_user {
   background-image: url("/src/img/iconName.png");
   background-repeat: no-repeat;
   background-size: 30px;

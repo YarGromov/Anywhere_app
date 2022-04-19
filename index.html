@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <title>Anywhere app.</title>
-  </head>
 
-  <body>
-   <div class="container">
-     <img src="/src/img/line.png" alt="line">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>Anywhere app.</title>
+</head>
+
+<body>
+  <div class="container">
+    <img class="line" src="/src/img/line.png" alt="line">
+
     <div class="content">
-      <nav class="navigation">
-        <ul>
-          <li><a class="anywhere" href="#"><span>Anywhere app</span></a></li>
-          <li><a class="nav_link" href="#">Home</a></li>
-          <li><a class="nav_link" href="#">Join</a></li>
-        </ul>
-      </nav>
-     
 
-      <div class="stripes"></div>
+      <header class="header">
+        <a class="header__logo" href="#"><span>Anywhere app</span></a>
 
-      <div class="info">
-        <div class="start">Start for free</div>
-        <div class="create">
-          <h1>Create new account <span class="dot">.</span></h1>
-        </div>
-        <div class="logIn">
-          Already A Member?
-          <span><a class="logIn_link" href="#">Log in</a></span>
-        </div>
-      </div>
+        <nav class="header__navigation navigation">
+          <ul>
+            <li><a class="navigation__link" href="#">Home</a></li>
+            <li><a class="navigation__link" href="#">Join</a></li>
+          </ul>
+        </nav>
 
-      <form action="#" method="POST">
+      </header>
 
-      
-        <div class="fields">
-          <div class="grid">
-              <div class="field">
-                  <div class="field__name"></div>
-                  <input type="text" class="field__input field__input_first_name" />
-              </div>
-              <div class="field">
-                  <div class="field__name"></div>
-                  <input type="text" class="field__input field__input_second_name" />
-              </div>
+      <main>
+        <div class="logotype"></div>
+
+        <div class="info">
+          <div class="info__descripion">Start for free</div>
+          <h1 class="info__header">Create new account <span class="info__header-dot">.</span></h1>
+          <div class="info__content">
+            Already A Member?
+            <a class="info__link" href="#">Log in</a>
           </div>
-          <div class="field">
-              <div class="field__name"></div>
+        </div>
+
+
+
+
+        <form class="form" action="#" method="POST">
+          <div class="form__fields">
+            <div class="grid">
+              <div class="field">
+                <input type="text" class="field__input field__input_user" />
+                <div class="field__name"></div>
+              </div>
+              <div class="field">
+                <input type="text" class="field__input field__input_user" />
+                <div class="field__name"></div>
+              </div>
+            </div>
+            <div class="field">
               <input type="email" class="field__input" />
-          </div>
-          <div class="field">
               <div class="field__name"></div>
+            </div>
+            <div class="field">
               <input type="password" class="field__input" />
+              <div class="field__name"></div>
+            </div>
           </div>
-      </div>
+        </form>
 
+        <div class="buttons">
+          <button class="buttons__item button">Change method</button>
+          <button class="buttons__item button button_primary">Create account</button>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
 
-      </form>
-
-      <div class="buttons">
-        <button class="button">Change method</button>
-        <button class="button  button_primary">Create account</button>
-   </div>
-      
-  </body>
 </html>
