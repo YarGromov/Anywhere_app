@@ -1,79 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Anywhere app.</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <title>Anywhere app.</title>
-</head>
+  <body>
+    <div class="container">
+      <div class="logotype"></div>
 
-<body>
-  <div class="container">
+      <img class="line" src="/src/img/line.png" alt="line" />
 
-    <div class="logotype"></div>
-    
-    <img class="line" src="/src/img/line.png" alt="line">
+      <div class="content">
+        <header class="header">
+          <a class="header__logo" href="#"><span>Anywhere app</span></a>
 
-    <div class="content">
+          <nav class="header__navigation navigation">
+            <ul>
+              <li><a class="navigation__link" href="#">Home</a></li>
+              <li><a class="navigation__link" href="#">Join</a></li>
+            </ul>
+          </nav>
+        </header>
 
-      <header class="header">
-        <a class="header__logo" href="#"><span>Anywhere app</span></a>
-
-        <nav class="header__navigation navigation">
-          <ul>
-            <li><a class="navigation__link" href="#">Home</a></li>
-            <li><a class="navigation__link" href="#">Join</a></li>
-          </ul>
-        </nav>
-
-      </header>
-
-      <main>
-        
-
-        <div class="info">
-          <div class="info__descripion">Start for free</div>
-          <h1 class="info__header">Create new account <span class="info__header-dot">.</span></h1>
-          <div class="info__content">
-            Already A Member?
-            <a class="info__link" href="#">Log in</a>
+        <main>
+          <div class="info">
+            <div class="info__descripion">Start for free</div>
+            <h1 class="info__header">
+              Create new account <span class="info__header-dot">.</span>
+            </h1>
+            <div class="info__content">
+              Already A Member?
+              <a class="info__link" href="#">Log in</a>
+            </div>
           </div>
-        </div>
 
-
-
-
-        <form class="form" action="#" method="POST">
-          <div class="form__fields">
-            <div class="grid">
+          <form class="form" action="#" method="POST">
+            <div class="form__fields">
+              <div class="grid">
+                <div class="field">
+                  <input type="text" class="field__input field__input_user" />
+                  <div class="field__name"></div>
+                </div>
+                <div class="field">
+                  <input type="text" class="field__input field__input_user" />
+                  <div class="field__name"></div>
+                </div>
+              </div>
               <div class="field">
-                <input type="text" class="field__input field__input_user" />
+                <input type="email" class="field__input" />
                 <div class="field__name"></div>
               </div>
               <div class="field">
-                <input type="text" class="field__input field__input_user" />
+                <input type="password" class="field__input" />
                 <div class="field__name"></div>
               </div>
             </div>
-            <div class="field">
-              <input type="email" class="field__input" />
-              <div class="field__name"></div>
-            </div>
-            <div class="field">
-              <input type="password" class="field__input" />
-              <div class="field__name"></div>
-            </div>
-          </div>
-        </form>
+          </form>
 
-        <div class="buttons">
-          <button class="buttons__item button">Change method</button>
-          <button class="buttons__item button button_primary">Create account</button>
-        </div>
-      </main>
+          <div class="buttons">
+            <button class="buttons__item button">Change method</button>
+            <button class="buttons__item button button_primary">
+              Create account
+            </button>
+          </div>
+        </main>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
