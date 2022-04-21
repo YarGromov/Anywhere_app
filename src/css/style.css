@@ -71,7 +71,7 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  background-color: #5b91e3;
+  background-color: #288ee3;
   position: absolute;
   border-radius: 100%;
   left: 31px;
@@ -125,7 +125,7 @@ h1 {
 }
 
 .info__link {
-  color: #4281ff;
+  color: #2794f3;
   font-size: 16px;
   text-decoration: none;
 }
@@ -159,10 +159,18 @@ form {
 
 .button_primary {
   min-width: 188px;
+  background-color: #2794f3;
+}
+.button_primary:hover {
+  background-color: red;
 }
 
 .button:hover {
-  background-color: #5b91e3;
+  background-color: #2794f3;
+}
+
+.button_primary:hover {
+  background-color: red;
 }
 
 input:focus {
@@ -203,6 +211,7 @@ input[type="text"] {
   background-color: rgb(61, 64, 78);
   color: white;
   font-size: 18px;
+  padding-left: 22px;
 }
 
 input[type="password"] {

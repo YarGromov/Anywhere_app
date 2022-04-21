@@ -71,7 +71,7 @@ body {
   content: "";
   width: 30px;
   height: 30px;
-  background-color: #5b91e3;
+  background-color: #288ee3;
   border-radius: 100%;
   display: block;
   position: absolute;
@@ -125,7 +125,7 @@ h1 {
 }
 
 .info__link {
-  color: #4281ff;
+  color: #2794f3;
   font-size: 16px;
   text-decoration: none;
 }
@@ -160,10 +160,19 @@ form {
 
 .button_primary {
   min-width: 188px;
+  background-color: #2794f3;
+}
+
+.button_primary:hover {
+  background-color: red;
 }
 
 .button:hover {
-  background-color: #5b91e3;
+  background-color: #2794f3;
+}
+
+.button_primary:hover {
+  background-color: red;
 }
 
 input:focus {
@@ -202,6 +211,7 @@ input[type="text"] {
   background-color: #3d404e;
   border: none;
   border-radius: 17px;
+  padding-left: 22px;
   font-size: 18px;
   position: relative;
 }
