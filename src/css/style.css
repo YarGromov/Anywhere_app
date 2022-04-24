@@ -6,7 +6,8 @@
 body {
   position: relative;
   background: url("/src/img/mount.jpg") center center/cover no-repeat;
-  height: 100%;
+  min-height: 100%;
+  font-family: sans-serif;
 }
 
 .container {
@@ -79,17 +80,8 @@ body {
 }
 
 main {
-  margin-top: 127px;
-  margin-left: 17px;
-}
-
-.logotype {
-  position: absolute;
-  width: 110px;
-  height: 90px;
-  background: url("/src/img/ff.png") center center/cover no-repeat;
-  left: 1250px;
-  top: 600px;
+  margin: 120px auto 0;
+  max-width: 97%;
 }
 
 .info {
@@ -190,6 +182,7 @@ input:focus {
 
 .field__input {
   margin-top: 10px;
+  padding-right: 40px;
 }
 
 .field__input_user {
@@ -215,7 +208,7 @@ input[type="text"] {
 }
 
 input[type="password"] {
-  background-image: url("/src/img/iconsLock1.png");
+  background-image: url("/src/img/iconsLock2.png");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 95%;
@@ -243,4 +236,28 @@ input[type="password"] {
   min-width: 398px;
   margin-top: 15px;
   padding-left: 22px;
+}
+
+::placeholder {
+  position: absolute;
+  color: white;
+  opacity: 0.6;
+  font-size: 9px;
+  top: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-height: 100px;
+  padding: 25px;
+}
+
+.footer__logotype {
+  position: relative;
+  width: 130px;
+  height: 100px;
+  background: url("/src/img/ff.png") center center/cover no-repeat;
+  right: 55px;
 }

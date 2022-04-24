@@ -5,8 +5,9 @@
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   background: url("mount.c7f571b5.jpg") center / cover no-repeat;
+  font-family: sans-serif;
   position: relative;
 }
 
@@ -80,17 +81,8 @@ body {
 }
 
 main {
-  margin-top: 127px;
-  margin-left: 17px;
-}
-
-.logotype {
-  width: 110px;
-  height: 90px;
-  background: url("ff.6cfa0514.png") center / cover no-repeat;
-  position: absolute;
-  top: 600px;
-  left: 1250px;
+  max-width: 97%;
+  margin: 120px auto 0;
 }
 
 .info {
@@ -192,6 +184,7 @@ input:focus {
 
 .field__input {
   margin-top: 10px;
+  padding-right: 40px;
 }
 
 .field__input_user {
@@ -217,7 +210,7 @@ input[type="text"] {
 }
 
 input[type="password"] {
-  background-image: url("iconsLock1.a9e87afb.png");
+  background-image: url("iconsLock2.6003ec39.png");
   background-position: 95%;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -244,6 +237,30 @@ input[type="email"], input[type="password"] {
   padding-left: 22px;
   font-size: 18px;
   position: relative;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: .6;
+  font-size: 9px;
+  position: absolute;
+  top: 5px;
+}
+
+.footer {
+  min-height: 100px;
+  justify-content: end;
+  align-items: center;
+  padding: 25px;
+  display: flex;
+}
+
+.footer__logotype {
+  width: 130px;
+  height: 100px;
+  background: url("ff.6cfa0514.png") center / cover no-repeat;
+  position: relative;
+  right: 55px;
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */
