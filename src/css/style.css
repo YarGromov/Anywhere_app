@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  min-height: 100%;
+}
 body {
   position: relative;
   background: url("/src/img/mount.jpg") center center/cover no-repeat;
@@ -57,11 +61,12 @@ body {
 
 .header .navigation__link {
   font-size: 17px;
-  opacity: 0.3;
   margin-left: 39px;
+  color: #6d7483;
 }
 
 .header__logo {
+  position: relative;
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -75,8 +80,8 @@ body {
   background-color: #288ee3;
   position: absolute;
   border-radius: 100%;
-  left: 31px;
-  top: 35px;
+  right: 135px;
+  top: -4px;
 }
 
 main {
@@ -96,6 +101,7 @@ main {
   text-transform: uppercase;
   font-size: 17px;
   margin-top: 10px;
+  color: #9aa5b5;
 }
 
 h1 {
@@ -108,12 +114,14 @@ h1 {
   position: relative;
   color: #5b91e3;
   right: 10px;
+  font-family: serif;
 }
 
 .info__content {
   margin: 27px 5px 10px;
   opacity: 0.6;
   font-size: 18px;
+  color: #919cac;
 }
 
 .info__link {
@@ -133,7 +141,6 @@ form {
 }
 
 .buttons {
-  margin-left: 33px;
   margin-top: 40px;
 }
 
@@ -189,7 +196,7 @@ input:focus {
   background-image: url("/src/img/iconName.png");
   background-repeat: no-repeat;
   background-size: 18.5px;
-  background-position: 90.5%;
+  background-position: calc(100% - 16px) center;
   margin-right: 30px;
 }
 
@@ -211,7 +218,7 @@ input[type="password"] {
   background-image: url("/src/img/iconsLock2.png");
   background-repeat: no-repeat;
   background-size: 20px;
-  background-position: 95%;
+  background-position: calc(100% - 16px) center;
   position: relative;
 }
 
@@ -219,7 +226,7 @@ input[type="email"] {
   background-image: url("/src/img/iconsMail.png");
   background-repeat: no-repeat;
   background-size: 17.5px;
-  background-position: 95%;
+  background-position: calc(100% - 16px) center;
   position: relative;
 }
 

@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <title>Anywhere app.</title>
-  </head>
 
-  <body>
-    <div class="container">
-     
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>Anywhere app.</title>
+</head>
 
-      <img class="line" src="/src/img/line.png" alt="line" />
+<body>
+  <div class="container">
 
-      <div class="content">
-        <header class="header">
-          <a class="header__logo" href="#"><span>Anywhere app</span></a>
 
-          <nav class="header__navigation navigation">
-            <ul>
-              <li><a class="navigation__link" href="#">Home</a></li>
-              <li><a class="navigation__link" href="#">Join</a></li>
-            </ul>
-          </nav>
-        </header>
+    <img class="line" src="/src/img/line.png" alt="line" />
 
-        <main>
-          <div class="info">
-            <div class="info__descripion">Start for free</div>
-            <h1 class="info__header">
-              Create new account <span class="info__header-dot">.</span>
-            </h1>
-            <div class="info__content">
-              Already A Member?
-              <a class="info__link" href="#">Log in</a>
+    <div class="content">
+      <header class="header">
+        <a class="header__logo" href="#"><span>Anywhere app</span></a>
+
+        <nav class="header__navigation navigation">
+          <ul>
+            <li><a class="navigation__link" href="#">Home</a></li>
+            <li><a class="navigation__link" href="#">Join</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="info">
+          <div class="info__descripion">Start for free</div>
+          <h1 class="info__header">
+            Create new account <span class="info__header-dot">.</span>
+          </h1>
+          <div class="info__content">
+            Already A Member?
+            <a class="info__link" href="#">Log in</a>
+          </div>
+        </div>
+
+        <form class="form" action="#" method="POST">
+          <div class="form__fields">
+            <div class="grid">
+              <div class="field">
+                <input type="text" value="First name" placeholder="First name" class="field__input field__input_user" />
+                <div class="field__name"></div>
+              </div>
+              <div class="field">
+                <input type="text" value="Last name" placeholder="Last name" class="field__input field__input_user" />
+                <div class="field__name"></div>
+              </div>
+            </div>
+            <div class="field">
+              <input type="email" value="Email" placeholder="Email" class="field__input" />
+              <div class="field__name"></div>
+            </div>
+            <div class="field">
+              <input type="password" value="Password" placeholder="Password" class="field__input" />
+              <div class="field__name"></div>
             </div>
           </div>
-
-          <form class="form" action="#" method="POST">
-            <div class="form__fields">
-              <div class="grid">
-                <div class="field">
-                  <input
-                    type="text"
-                    value="First name"
-                    placeholder="First name"
-                    class="field__input field__input_user"
-                  />
-                  <div class="field__name"></div>
-                </div>
-                <div class="field">
-                  <input
-                    type="text"
-                    value="Last name"
-                    placeholder="Last name"
-                    class="field__input field__input_user"
-                  />
-                  <div class="field__name"></div>
-                </div>
-              </div>
-              <div class="field">
-                <input
-                  type="email"
-                  value="Email"
-                  placeholder="Email"
-                  class="field__input"
-                />
-                <div class="field__name"></div>
-              </div>
-              <div class="field">
-                <input
-                  type="password"
-                  value="Password"
-                  placeholder="Password"
-                  class="field__input"
-                />
-                <div class="field__name"></div>
-              </div>
-            </div>
-          </form>
 
           <div class="buttons">
             <button class="buttons__item button">Change method</button>
@@ -86,13 +66,15 @@
               Create account
             </button>
           </div>
-        </main>
+        </form>
+      </main>
 
-        <footer class="footer">
-        
-          <div class="footer__logotype"></div>
-        </footer>
-      </div>
+      <footer class="footer">
+
+        <div class="footer__logotype"></div>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
