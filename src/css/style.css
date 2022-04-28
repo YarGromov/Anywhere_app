@@ -268,3 +268,80 @@ input[type="password"] {
   background: url("/src/img/ff.png") center center/cover no-repeat;
   right: 55px;
 }
+
+@media (max-width: 376px) {
+  .content {
+    padding-left: 0;
+  }
+
+  .header__logo {
+    margin-left: 4px;
+    font-size: 15px;
+  }
+
+  .header__logo::before {
+    content: "";
+    display: flex;
+    left: -30px;
+  }
+
+  .header__logo span {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .header li {
+    margin-left: 0;
+  }
+
+  .header .navigation__link {
+    margin-left: 30px;
+    font-size: 15px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .info__header {
+    line-height: 50px;
+    padding-top: 10px;
+  }
+
+  .info__content {
+    margin-top: 10px;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+  .field {
+    min-width: 90%;
+  }
+
+  input[type="text"] {
+    min-width: 100%;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    min-width: 100%;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .button {
+    min-width: 43%;
+    padding: 20px 0;
+  }
+
+  .footer__logotype {
+    display: none;
+  }
+}
