@@ -160,17 +160,20 @@ form {
   min-width: 188px;
   background-color: #2794f3;
 }
-.button_primary:hover {
-  background-color: red;
-}
 
 .button:hover {
   background-color: #2794f3;
 }
 
 .button_primary:hover {
-  background-color: red;
+  color: #313f54;
+  opacity-color: 0.1;
+  background-color: #16de4f;
 }
+
+/* .button_primary:hover {
+  background-color: red;
+} */
 
 input:focus {
   font-size: 18px;
