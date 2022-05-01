@@ -38,24 +38,26 @@
           </div>
         </div>
 
-        <form class="form" action="#" method="POST">
+        <form class="form" action="#" method="GET" enctype="multipart/form-data">
           <div class="form__fields">
             <div class="grid">
               <div class="field">
-                <input type="text" value="First name" placeholder="First name" class="field__input field__input_user" />
+                <input type="text" value="Yaroslav" name="name" placeholder="First name"
+                  class="field__input field__input_user" />
                 <div class="field__name"></div>
               </div>
               <div class="field">
-                <input type="text" value="Last name" placeholder="Last name" class="field__input field__input_user" />
+                <input type="text" name="surname" value="Gromov" placeholder="Last name"
+                  class="field__input field__input_user" />
                 <div class="field__name"></div>
               </div>
             </div>
             <div class="field">
-              <input type="email" value="Email" placeholder="Email" class="field__input" />
+              <input type="email" name="email" value="Email@gmail.com" placeholder="Email" class="field__input" />
               <div class="field__name"></div>
             </div>
             <div class="field">
-              <input type="password" value="Password" placeholder="Password" class="field__input" />
+              <input type="password" name="password" value="Password" placeholder="Password" class="field__input" />
               <div class="field__name"></div>
             </div>
           </div>
