@@ -271,9 +271,13 @@ input[type="password"] {
   right: 55px;
 }
 
-@media (max-width: 376px) {
+@media (min-width: 320px) and (max-width: 426px) {
   .content {
     padding-left: 0;
+  }
+
+  .header {
+    padding-left: 50px;
   }
 
   .header__logo {
@@ -303,6 +307,14 @@ input[type="password"] {
 
   .line {
     display: none;
+  }
+
+  .info {
+    margin-left: 24px;
+  }
+
+  .form {
+    margin-left: 24px;
   }
 
   .info__header {
@@ -336,11 +348,23 @@ input[type="password"] {
 
   .buttons {
     display: flex;
+    width: 85%;
   }
 
   .button {
-    min-width: 43%;
+    min-width: 50%;
     padding: 20px 0;
+    margin-left: 3px;
+  }
+
+  .footer__logotype {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .line {
+    display: none;
   }
 
   .footer__logotype {
