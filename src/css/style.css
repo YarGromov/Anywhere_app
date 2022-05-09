@@ -362,6 +362,20 @@ input[type="password"] {
   }
 }
 
+@media (max-width: 545px) {
+  .content {
+    padding-left: 0;
+  }
+
+  .info__header {
+    line-height: 35px;
+  }
+
+  .buttons {
+    display: flex;
+  }
+}
+
 @media (max-width: 767px) {
   .line {
     display: none;
@@ -369,5 +383,9 @@ input[type="password"] {
 
   .footer__logotype {
     display: none;
+  }
+
+  .info__header {
+    line-height: 35px;
   }
 }
