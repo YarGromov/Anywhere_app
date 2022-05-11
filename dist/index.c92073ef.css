@@ -168,7 +168,6 @@ form {
 
 .button_primary:hover {
   color: #313f54;
-  opacity-color: .1;
   background-color: #16de4f;
 }
 
@@ -179,7 +178,6 @@ input:focus {
 }
 
 .grid {
-  max-width: 430px;
   display: flex;
 }
 
@@ -268,9 +266,13 @@ input[type="email"], input[type="password"] {
   right: 55px;
 }
 
-@media (max-width: 376px) {
+@media (min-width: 320px) and (max-width: 426px) {
   .content {
     padding-left: 0;
+  }
+
+  .header {
+    padding-left: 50px;
   }
 
   .header__logo {
@@ -302,6 +304,10 @@ input[type="email"], input[type="password"] {
     display: none;
   }
 
+  .info, .form {
+    margin-left: 24px;
+  }
+
   .info__header {
     padding-top: 10px;
     line-height: 50px;
@@ -328,16 +334,42 @@ input[type="email"], input[type="password"] {
   }
 
   .buttons {
+    width: 85%;
     display: flex;
   }
 
   .button {
-    min-width: 43%;
+    min-width: 50%;
+    margin-left: 3px;
     padding: 20px 0;
   }
 
   .footer__logotype {
     display: none;
+  }
+}
+
+@media (max-width: 545px) {
+  .content {
+    padding-left: 0;
+  }
+
+  .info__header {
+    line-height: 35px;
+  }
+
+  .buttons {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .line, .footer__logotype {
+    display: none;
+  }
+
+  .info__header {
+    line-height: 35px;
   }
 }
 

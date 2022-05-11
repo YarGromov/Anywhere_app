@@ -23,10 +23,22 @@ submitButton.addEventListener("click", async (event) => {
 
   const success_field = document.createElement("div");
 
-  success_field.innerHTML = "start for free";
+  const success_field_header = document.createElement("div");
 
-  success_field.style.cssText =
+  success_field_header.innerHTML = "start for free";
+
+  success_field_header.style.cssText =
     "color: #9aa5b5; margin-top: 35px; margin-left: 57px; font-size: 17px; opacity: 0.6; text-transform: uppercase;";
 
   content.append(success_field);
+
+  success_field.append(success_field_header);
+
+  const success_field_result = document.createElement("div");
+
+  success_field_result.innerHTML = "Success!";
+
+  success_field.append(success_field_result);
+
+  // main.style.display = "";
 });
