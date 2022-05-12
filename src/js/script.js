@@ -27,8 +27,7 @@ submitButton.addEventListener("click", async (event) => {
 
   success_field_header.innerHTML = "start for free";
 
-  success_field_header.style.cssText =
-    "color: #9aa5b5; margin-top: 35px; margin-left: 57px; font-size: 17px; opacity: 0.6; text-transform: uppercase;";
+  success_field_header.classList.add("success_field_header");
 
   content.append(success_field);
 
@@ -38,7 +37,23 @@ submitButton.addEventListener("click", async (event) => {
 
   success_field_result.innerHTML = "Success!";
 
+  success_field_result.classList.add("success_field_result");
+
   success_field.append(success_field_result);
 
+  const button_new_form = document.createElement("button");
+
+  button_new_form.classList.add("button_new_form");
+
+  button_new_form.innerHTML = "New Form";
+
+  success_field.append(button_new_form);
+
   // main.style.display = "";
+
+  button_new_form.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    main.style.display = "";
+  });
 });

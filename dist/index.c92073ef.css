@@ -373,4 +373,30 @@ input[type="email"], input[type="password"] {
   }
 }
 
+.success_field_header {
+  color: #9aa5b5;
+  opacity: .9;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-left: 60px;
+  font-size: 17px;
+}
+
+.success_field_result {
+  color: #fff;
+  margin: 15px 0 0 55px;
+  font-size: 50px;
+}
+
+.button_new_form {
+  width: 130px;
+  height: 55px;
+  color: #fff;
+  background-color: #4b4e5f;
+  border: none;
+  border-radius: 25px;
+  margin: 20px 0 0 55px;
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=index.c92073ef.css.map */

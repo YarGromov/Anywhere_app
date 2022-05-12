@@ -388,3 +388,29 @@ input[type="password"] {
     line-height: 35px;
   }
 }
+
+.success_field_header {
+  color: #9aa5b5;
+  margin-top: 35px;
+  margin-left: 60px;
+  font-size: 17px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.success_field_result {
+  color: white;
+  font-size: 50px;
+  margin: 15px 0 0 55px;
+}
+
+.button_new_form {
+  width: 130px;
+  height: 55px;
+  margin: 20px 0 0 55px;
+  background-color: #4b4e5f;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
