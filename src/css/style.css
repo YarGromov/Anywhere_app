@@ -414,3 +414,27 @@ input[type="password"] {
   color: white;
   font-size: 15px;
 }
+
+.button_new_form:hover {
+  background-color: #2794f3;
+}
+
+.gender {
+  width: 20px;
+  height: 20px;
+  margin: 20px 0 10px 10px;
+  border: none;
+}
+
+label {
+  font-size: 25px;
+  color: white;
+}
+
+.gender_male {
+  color: #4254f5;
+}
+
+.gender_female {
+  color: #f264f5;
+}

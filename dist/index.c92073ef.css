@@ -399,4 +399,28 @@ input[type="email"], input[type="password"] {
   font-size: 15px;
 }
 
+.button_new_form:hover {
+  background-color: #2794f3;
+}
+
+.gender {
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin: 20px 0 10px 10px;
+}
+
+label {
+  color: #fff;
+  font-size: 25px;
+}
+
+.gender_male {
+  color: #4254f5;
+}
+
+.gender_female {
+  color: #f264f5;
+}
+
 /*# sourceMappingURL=index.c92073ef.css.map */

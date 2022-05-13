@@ -49,11 +49,8 @@ submitButton.addEventListener("click", async (event) => {
 
   success_field.append(button_new_form);
 
-  // main.style.display = "";
-
-  button_new_form.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    main.style.display = "";
+  button_new_form.addEventListener("click", (e) => {
+    e.preventDefault();
+    history.back();
   });
 });
