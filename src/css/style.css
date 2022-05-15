@@ -442,3 +442,11 @@ label {
 .newForm .main {
   margin-top: 0;
 }
+
+.main2 {
+  display: none;
+}
+
+.newMain {
+  display: block;
+}

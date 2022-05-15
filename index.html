@@ -38,7 +38,7 @@
           </div>
         </div>
 
-        <form class="form" action="#" method="POST">
+        <form class="form" action="#" method="GET">
           <div class="form__fields">
             <div class="grid">
               <div class="field">
@@ -53,12 +53,61 @@
               </div>
             </div>
             <div class="field">
-              <input type="email" required name="email" value="Email@gmail.com" placeholder="Email"
+              <input required type="email" name="email" value="Email@gmail.com" placeholder="Email"
                 class="field__input" />
               <div class="field__name"></div>
             </div>
             <div class="field">
               <input type="password" value="Password" name="password" placeholder="Password" class="field__input" />
+              <div class="field__name"></div>
+            </div>
+          </div>
+
+          <input class="gender" type="radio" name="question">
+          <label class="gender_male" for="yes">Male</label>
+
+          <input class="gender" type="radio" name="question">
+          <label class="gender_female" for="no">Female</label>
+
+          <div class="buttons">
+            <button class="buttons__item button">Change method</button>
+            <button type="submit" class="buttons__item button button_primary">
+              Create account
+            </button>
+          </div>
+        </form>
+      </main>
+
+      <main class="main main2">
+        <div class="info">
+          <div class="info__descripion">Start for free</div>
+          <h1 class="info__header">
+            Create new account <span class="info__header-dot">.</span>
+          </h1>
+          <div class="info__content">
+            Already A Member?
+            <a class="info__link" href="#">Log in</a>
+          </div>
+        </div>
+
+        <form class="form" action="#" method="GET">
+          <div class="form__fields">
+            <div class="grid">
+              <div class="field">
+                <input type="text" name="name" placeholder="First name" class="field__input field__input_user" />
+                <div class="field__name"></div>
+              </div>
+              <div class="field">
+                <input type="text" name="surname" placeholder="Last name" class="field__input field__input_user" />
+                <div class="field__name"></div>
+              </div>
+            </div>
+            <div class="field">
+              <input required type="email" name="email" placeholder="Email" class="field__input" />
+              <div class="field__name"></div>
+            </div>
+            <div class="field">
+              <input type="password" name="password" placeholder="Password" class="field__input" />
               <div class="field__name"></div>
             </div>
           </div>

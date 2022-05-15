@@ -4,7 +4,8 @@ const submitButton = document.querySelector("[type=submit]");
 
 const main = document.querySelector(".main");
 
-const newMain = document.querySelector(".main");
+const newMain = document.querySelector(".main2");
+
 
 const footer__logotype = document.querySelector(".footer__logotype");
 
@@ -58,7 +59,9 @@ submitButton.addEventListener("click", async (event) => {
 
     success_field.style.display = "none";
 
-    main.style.display = "";
+    newMain.style.display = "";
+
+    newMain.classList.add('newMain');
 
     const newForm = document.createElement("div");
 
