@@ -2,11 +2,15 @@ const form = document.querySelector("form");
 
 const submitButton = document.querySelector("[type=submit]");
 
-const main = document.querySelector("main");
+const main = document.querySelector(".main");
+
+const newMain = document.querySelector(".main");
 
 const footer__logotype = document.querySelector(".footer__logotype");
 
 const content = document.querySelector(".content");
+
+const container = document.querySelector(".container");
 
 submitButton.addEventListener("click", async (event) => {
   event.preventDefault();
@@ -51,6 +55,18 @@ submitButton.addEventListener("click", async (event) => {
 
   button_new_form.addEventListener("click", (e) => {
     e.preventDefault();
-    history.back();
+
+    success_field.style.display = "none";
+
+    main.style.display = "";
+
+    const newForm = document.createElement("div");
+
+    newForm.classList.add("newForm");
+
+    content.append(newForm);
+
+    newForm.append(newMain);
+
   });
 });

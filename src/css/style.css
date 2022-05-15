@@ -438,3 +438,7 @@ label {
 .gender_female {
   color: #f264f5;
 }
+
+.newForm .main {
+  margin-top: 0;
+}
