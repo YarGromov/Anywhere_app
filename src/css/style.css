@@ -269,7 +269,7 @@ input[type="password"] {
   right: 55px;
 }
 
-@media (min-width: 320px) and (max-width: 426px) {
+@media (max-width: 426px) {
   .content {
     padding-left: 0;
   }
@@ -448,4 +448,22 @@ label {
 
 .newMain {
   display: block;
+}
+
+@media (max-width: 320px) {
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 260px) {
+  .info__header-dot {
+    display: none;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
 }
