@@ -388,6 +388,10 @@ input[type="password"] {
   }
 }
 
+.success_field {
+  margin: 150px 0 0 -15px;
+}
+
 .success_field_header {
   color: #9aa5b5;
   margin-top: 35px;
