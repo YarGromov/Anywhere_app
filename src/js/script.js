@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 const submitButton = document.querySelector("[type=submit]");
 const main = document.querySelector(".main");
-const footer__logotype = document.querySelector(".footer__logotype");
+const footerLogotype = document.querySelector(".footer__logotype");
 const content = document.querySelector(".content");
 const container = document.querySelector(".container");
 const success_field = document.querySelector('.success_field');
@@ -9,9 +9,10 @@ const button_new_form = document.querySelector('.button_new_form');
 
 success_field.style.display = 'none';
 
+form.addEventListener('submit', (e) => e.preventDefault())
 
-submitButton.addEventListener("click", async (event) => {
-  event.preventDefault();
+submitButton.addEventListener("click", async () => {
+
 
   const formData = new FormData(form);
   const qs = new URLSearchParams(formData).toString();
@@ -22,22 +23,21 @@ submitButton.addEventListener("click", async (event) => {
 
   success_field.style.display = '';
 
-  footer__logotype.style.cssText =
-    "position: absolute; top: 550px; right: 75px";
+  footerLogotype.classList.add('footer__logotype_success');
 
+});
 
-  button_new_form.addEventListener("click", (e) => {
-    e.preventDefault();
+button_new_form.addEventListener("click", () => {
+  success_field.style.display = "none";
 
-    success_field.style.display = "none";
+  main.style.display = "block";
 
-    main.style.display = "block";
+  footerLogotype.classList.remove('footer__logotype_success');
 
-    document.querySelector('[name="name"]').value = '';
-    document.querySelector('[name="surname"]').value = '';
-    document.querySelector('[name="email"]').value = '';
-    document.querySelector('[name="password"]').value = '';
-    // document.querySelector('[type="radio"]').value = '';
+  document.querySelector('[name="name"]').value = '';
+  document.querySelector('[name="surname"]').value = '';
+  document.querySelector('[name="email"]').value = '';
+  document.querySelector('[name="password"]').value = '';
+  // document.querySelector('[type="radio"]').value = '';
 
-  });
 });

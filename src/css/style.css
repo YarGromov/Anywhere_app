@@ -133,14 +133,16 @@ h1 {
 }
 
 form {
+  width: 440px;
   position: relative;
-  margin-left: 40px;
-  padding-top: 10px;
+  padding: 10 0 0 40px;
   min-height: 180px;
 }
 
 .buttons {
+  display: flex;
   margin-top: 40px;
+  width: 100%;
 }
 
 .button {
@@ -148,7 +150,7 @@ form {
   background-color: #4b4d5e;
   color: white;
   border: none;
-  min-width: 195px;
+  width: 100%;
   min-height: 50px;
   margin-right: 10px;
   border-radius: 30px;
@@ -156,7 +158,6 @@ form {
 }
 
 .button_primary {
-  min-width: 188px;
   background-color: #2794f3;
 }
 
@@ -169,10 +170,6 @@ form {
   background-color: #16de4f;
 }
 
-/* .button_primary:hover {
-  background-color: red;
-} */
-
 input:focus {
   font-size: 18px;
   background-color: #7b7c8a;
@@ -181,10 +178,6 @@ input:focus {
 
 .grid {
   display: flex;
-}
-
-.field {
-  max-width: 51%;
 }
 
 .field__input {
@@ -269,6 +262,10 @@ input[type="password"] {
   right: 55px;
 }
 
+.footer__logotype_success {
+  top: 170px;
+}
+
 @media (max-width: 426px) {
   .content {
     padding-left: 0;
@@ -312,7 +309,8 @@ input[type="password"] {
   }
 
   .form {
-    margin-left: 24px;
+    max-width: 100%;
+    padding: 0 24px;
   }
 
   .info__header {
@@ -346,7 +344,7 @@ input[type="password"] {
 
   .buttons {
     display: flex;
-    width: 85%;
+    width: 100%;
   }
 
   .button {
@@ -370,6 +368,10 @@ input[type="password"] {
   }
 
   .buttons {
+    display: flex;
+  }
+
+  .header__navigation {
     display: flex;
   }
 }
