@@ -4,16 +4,15 @@ const main = document.querySelector(".main");
 const footerLogotype = document.querySelector(".footer__logotype");
 const content = document.querySelector(".content");
 const container = document.querySelector(".container");
-const success_field = document.querySelector('.success_field');
-const button_new_form = document.querySelector('.button_new_form');
+const successField = document.querySelector(".success_field");
+const button_new_form = document.querySelector(".button_new_form");
+const radioButton = document.querySelector('input[name="question"]:checked');
 
-success_field.style.display = 'none';
+successField.style.display = "none";
 
-form.addEventListener('submit', (e) => e.preventDefault())
+form.addEventListener("submit", (e) => e.preventDefault());
 
 submitButton.addEventListener("click", async () => {
-
-
   const formData = new FormData(form);
   const qs = new URLSearchParams(formData).toString();
 
@@ -21,23 +20,21 @@ submitButton.addEventListener("click", async () => {
 
   main.style.display = "none";
 
-  success_field.style.display = '';
+  successField.style.display = "";
 
-  footerLogotype.classList.add('footer__logotype_success');
-
+  footerLogotype.classList.add("footer__logotype_success");
 });
 
 button_new_form.addEventListener("click", () => {
-  success_field.style.display = "none";
+  successField.style.display = "none";
 
   main.style.display = "block";
 
-  footerLogotype.classList.remove('footer__logotype_success');
+  footerLogotype.classList.remove("footer__logotype_success");
 
-  document.querySelector('[name="name"]').value = '';
-  document.querySelector('[name="surname"]').value = '';
-  document.querySelector('[name="email"]').value = '';
-  document.querySelector('[name="password"]').value = '';
-  // document.querySelector('[type="radio"]').value = '';
-
+  document.querySelector('[name="name"]').value = "";
+  document.querySelector('[name="surname"]').value = "";
+  document.querySelector('[name="email"]').value = "";
+  document.querySelector('[name="password"]').value = "";
+  document.querySelector('input[name="question"]:checked').checked = false;
 });
