@@ -5,7 +5,7 @@ const footerLogotype = document.querySelector(".footer__logotype");
 const content = document.querySelector(".content");
 const container = document.querySelector(".container");
 const successField = document.querySelector(".success_field");
-const button_new_form = document.querySelector(".button_new_form");
+const buttonNewForm = document.querySelector(".button_new_form");
 const radioButton = document.querySelector('input[name="question"]:checked');
 
 successField.style.display = "none";
@@ -15,11 +15,9 @@ form.addEventListener("submit", (e) => e.preventDefault());
 submitButton.addEventListener("click", async () => {
   const formData = new FormData(form);
   const qs = new URLSearchParams(formData).toString();
-
   fetch("/form?" + qs);
 
   main.style.display = "none";
-
   successField.style.display = "";
 
   footerLogotype.classList.add("footer__logotype_success");
@@ -27,7 +25,6 @@ submitButton.addEventListener("click", async () => {
 
 button_new_form.addEventListener("click", () => {
   successField.style.display = "none";
-
   main.style.display = "block";
 
   footerLogotype.classList.remove("footer__logotype_success");
