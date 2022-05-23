@@ -23,7 +23,7 @@ submitButton.addEventListener("click", async () => {
   footerLogotype.classList.add("footer__logotype_success");
 });
 
-button_new_form.addEventListener("click", () => {
+buttonNewForm.addEventListener("click", () => {
   successField.style.display = "none";
   main.style.display = "block";
 

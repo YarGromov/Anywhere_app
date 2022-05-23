@@ -85,7 +85,7 @@ body {
 }
 
 main {
-  margin: 120px auto 0;
+  margin: 100px auto 0;
 }
 
 .info {
@@ -319,9 +319,6 @@ input[type="password"] {
   .grid {
     flex-direction: column;
   }
-  .field {
-    min-width: 90%;
-  }
 
   input[type="text"] {
     min-width: 100%;
@@ -332,17 +329,12 @@ input[type="password"] {
     min-width: 100%;
   }
 
-  main {
-    margin-top: 100px;
-  }
-
   .buttons {
     display: flex;
     width: 100%;
   }
 
   .button {
-    min-width: 50%;
     padding: 20px 0;
     margin-left: 3px;
   }
