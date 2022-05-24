@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Anywhere app.</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <title>Anywhere app.</title>
-</head>
+  <body>
+    <div class="container">
+      <img class="line" src="/src/img/line.png" alt="line" />
 
-<body>
-  <div class="container">
+      <div class="content">
+        <header class="header">
+          <a class="header__logo" href="#"><span>Anywhere app</span></a>
 
+          <nav class="header__navigation navigation">
+            <ul>
+              <li><a class="navigation__link" href="#">Home</a></li>
+              <li><a class="navigation__link" href="#">Join</a></li>
+            </ul>
+          </nav>
+        </header>
 
-    <img class="line" src="/src/img/line.png" alt="line" />
-
-    <div class="content">
-      <header class="header">
-        <a class="header__logo" href="#"><span>Anywhere app</span></a>
-
-        <nav class="header__navigation navigation">
-          <ul>
-            <li><a class="navigation__link" href="#">Home</a></li>
-            <li><a class="navigation__link" href="#">Join</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="main">
-        <div class="info">
-          <div class="info__descripion">Start for free</div>
-          <h1 class="info__header">
-            Create new account <span class="info__header-dot">.</span>
-          </h1>
-          <div class="info__content">
-            Already A Member?
-            <a class="info__link" href="#">Log in</a>
+        <main class="main">
+          <div class="info">
+            <div class="info__descripion">Start for free</div>
+            <h1 class="info__header">
+              Create new account <span class="info__header-dot">.</span>
+            </h1>
+            <div class="info__content">
+              Already A Member?
+              <a class="info__link" href="#">Log in</a>
+            </div>
           </div>
-        </div>
 
-        <form class="form" action="#" method="GET">
-          <div class="form__fields">
-            <div class="grid">
+          <form class="form" action="#" method="GET">
+            <div class="form__fields">
+              <div class="grid">
+                <div class="field">
+                  <input
+                    type="text"
+                    name="name"
+                    value="Yaroslav"
+                    placeholder="First name"
+                    class="field__input field__input_user"
+                  />
+                  <div class="field__name"></div>
+                </div>
+                <div class="field">
+                  <input
+                    type="text"
+                    name="surname"
+                    value="Gromov"
+                    placeholder="Last name"
+                    class="field__input field__input_user"
+                  />
+                  <div class="field__name"></div>
+                </div>
+              </div>
               <div class="field">
-                <input type="text"  name="name" value="Yaroslav" placeholder="First name"
-                  class="field__input field__input_user" />
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  value="Email@gmail.com"
+                  placeholder="Email"
+                  class="field__input"
+                />
                 <div class="field__name"></div>
               </div>
               <div class="field">
-                <input type="text" name="surname" value="Gromov" placeholder="Last name"
-                  class="field__input field__input_user" />
+                <input
+                  type="password"
+                  value="Password"
+                  name="password"
+                  placeholder="Password"
+                  class="field__input"
+                />
                 <div class="field__name"></div>
               </div>
             </div>
-            <div class="field">
-              <input required type="email" name="email" value="Email@gmail.com" placeholder="Email"
-                class="field__input" />
-              <div class="field__name"></div>
+
+            <label class="gender_male">
+              <input class="gender" type="radio" name="question" />
+              Male
+            </label>
+
+            <label class="gender_female">
+              <input class="gender" type="radio" name="question" />
+              Female
+            </label>
+
+            <div class="buttons">
+              <button class="buttons__item button">Change method</button>
+              <button type="submit" class="buttons__item button button_primary">
+                Create account
+              </button>
             </div>
-            <div class="field">
-              <input type="password" value="Password" name="password" placeholder="Password" class="field__input" />
-              <div class="field__name"></div>
-            </div>
-          </div>
+          </form>
+        </main>
 
-          <input class="gender" type="radio" name="question">
-          <label class="gender_male" for="yes">Male</label>
-
-          <input class="gender" type="radio" name="question">
-          <label class="gender_female" for="no">Female</label>
-
-          <div class="buttons">
-            <button class="buttons__item button">Change method</button>
-            <button type="submit" class="buttons__item button button_primary">
-              Create account
-            </button>
-          </div>
-        </form>
-      </main>
-
-      <div class="success_field">
-        <div class="success_field_header">
-          Start for free
+        <div class="success_field">
+          <div class="success_field_header">Start for free</div>
+          <div class="success_field_result">Success!</div>
+          <button class="button_new_form">New Form</button>
         </div>
-        <div class="success_field_result">
-          Success!
-        </div>
-        <button class="button_new_form">New Form</button>
+
+        <footer class="footer">
+          <div class="footer__logotype"></div>
+        </footer>
       </div>
-
-
-      <footer class="footer">
-        <div class="footer__logotype"></div>
-      </footer>
-
     </div>
-  </div>
 
-  <script src="src/js/script.js"></script>
-</body>
-
+    <script src="src/js/script.js"></script>
+  </body>
 </html>
